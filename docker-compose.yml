@@ -18,6 +18,8 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: example
+   volumes:
+      - postgres_data:/var/lib/postgresql/data/
 
   adminer:
     image: adminer
