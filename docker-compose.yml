@@ -1,6 +1,8 @@
 services:
   backend:
     build: ./back
+    depends_on:
+      - db
     ports:
       - 4000:4000
     volumes:
